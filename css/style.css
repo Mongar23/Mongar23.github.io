@@ -7,15 +7,22 @@
 
 body {
     padding-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     background-color: #313131;
     color: #ffffff;
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 header {
-    width: 100vw;
+    position: sticky;
+    top: 0;
+    background-image: url(../images/matrix.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -68,6 +75,12 @@ main article:last-of-type {
     margin-bottom: 0;
 }
 
+main article ul {
+    position: relative;
+    left: 17px;
+    list-style-type: "> ";
+}
+
 
 main .WakaTimeEmbedded {
     display: flex;
@@ -105,8 +118,15 @@ article p {
     flex: 1;
 }
 
-article ul {
-    position: relative;
-    left: 16;
-    list-style-type: "> ";
+.aboutMe div img {
+    max-width: 25%;
+}
+
+.aboutMe table {
+    width: 50%;
+    table-layout: fixed;
+}
+
+.aboutMe td {
+    padding: 5px;
 }
