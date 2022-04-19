@@ -82,18 +82,21 @@ article p {
     margin-bottom: 10px;
 }
 
-article ul {
-    padding: 0 5px;
-
+.aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-article>figure {
-    float: right;
+.aboutMe h1 {
+    width: 100%;
 }
 
-article::after {
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
+.aboutMe div {
+    flex: 1 0 70%;
+}
+
+.aboutMe figure {
+    margin-left: 20px;
+    flex: 1;
 }
