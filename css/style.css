@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #313131;
+    color: #ffffff;
+}
+
+header {
+    width: 100vw;
+}
+
+h1 {
+    background-color: #000000;
+    color: #00fc3c;
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 20px;
+    font-size: 3vh;
+}
+
+h2 {
+    background-color: #000000;
+    color: #00fc3c;
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 20px;
+    font-size: 2vh;
+}
+
+aside, main {
+    padding: 5px;
+    background-color: #222222;
+    margin-top: 25px;
+}
+
+aside {
+    width: 25vw;
+    flex: 1 0 0;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+
+aside a {
+    display: block;
+    padding: 5px 5px 5px 10px;
+}
+
+main {
+    width: 75vw;
+    flex: 1 0 2;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+main article {
+    margin-bottom: 20px;
+}
+
+main article:last-of-type {
+    margin-bottom: 0;
+}
+
+main .WakaTimeEmbedded {
+    display: flex;
+}
+
+.WakaTimeEmbedded figure {
+    flex: 1;
+}
+
+article p {
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+article ul {
+    padding: 0 5px;
+
+}
+
+article>figure {
+    float: right;
+}
+
+article::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
