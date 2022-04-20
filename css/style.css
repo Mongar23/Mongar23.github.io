@@ -60,6 +60,7 @@ h2 {
     padding: 5px 5px 5px 10px;
     margin-bottom: 20px;
     font-size: 2vh;
+    margin-top: 10px;
 }
 
 aside, main {
@@ -73,12 +74,27 @@ aside {
     flex: 1 0 0;
     margin-left: 20px;
     margin-right: 10px;
-
 }
 
-aside a {
+
+aside figure {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+aside figcaption {
+    text-align: right;
+    color: #ffffff;
     display: block;
-    padding: 5px 5px 5px 10px;
+}
+
+aside a:hover {
+    color: #00fc3c;
+    text-decoration: underline;
+}
+
+aside img {
+    max-width: 100%;
 }
 
 main {
@@ -114,10 +130,6 @@ main .WakaTimeEmbedded {
 
 .WakaTimeEmbedded figure:first-of-type {
     margin-right: 20px;
-}
-
-article p {
-    margin-bottom: 10px;
 }
 
 .aboutMe {
