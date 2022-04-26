@@ -6,32 +6,38 @@
 }
 
 body {
-    padding-bottom: 20px;
-    background-color: #313131;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #333333;
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 10px;
+    padding-top: 25px;
 }
 
 header {
     position: sticky;
     top: 0;
     height: 7.5vh;
+    width: 100%;
     background-image: url(../images/matrix.gif);
     background-size: cover;
     background-repeat: no-repeat;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5vh;
+    /* background-color: aqua; */
+    font-size: 6.5vh;
+    max-height: 100%;
+    height: fit-content;
 }
 
 header img {
@@ -40,10 +46,7 @@ header img {
 }
 
 header nav {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%)
+    height: fit-content;
 }
 
 h1 {
@@ -66,46 +69,39 @@ h2 {
 aside, main {
     padding: 10px;
     background-color: #222222;
-    margin-top: 25px;
 }
 
 aside {
-    width: 25vw;
+    flex: 1 1 22%;
     height: 100%;
-    flex: 1 0 0;
-    margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 1vw;
 }
 
-aside figure {
-    display: inline-block;
-    margin-bottom: 20px;
+aside a {
+    display: block;
+    box-sizing: border-box;
+    padding: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid transparent;
 }
 
-aside figure:last-of-type {
-    margin-bottom: 0px;
+aside a:hover {
+    text-decoration: underline;
+    color: #00fc3c;
+    border: 2px solid #00fc3c;
+}
+
+aside img {
+    width: 100%;
 }
 
 aside figcaption {
     text-align: right;
-    color: #ffffff;
-    display: block;
-}
-
-aside a:hover {
-    color: #00fc3c;
-    text-decoration: underline;
-}
-
-aside img {
-    max-width: 100%;
 }
 
 main {
-    width: 75vw;
-    flex: 1 0 2;
-    margin-right: 20px;
-    margin-left: 10px;
+    flex: 1 1 70%;
 }
 
 main article {
@@ -117,27 +113,29 @@ main article:last-of-type {
 }
 
 main article ul {
-    position: relative;
-    left: 17px;
     list-style-type: "> ";
+    list-style-position: inside;
 }
 
 
 main .WakaTimeEmbedded {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 .WakaTimeEmbedded figure {
-    max-width: 50%;
-    flex: 1;
+    background-color: #111111;
+    width: 45%;
 }
 
-.WakaTimeEmbedded figure:first-of-type {
-    margin-right: 20px;
+.WakaTimeEmbedded figcaption {
+    padding-top: 5px;
 }
 
 .aboutMe {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -147,12 +145,11 @@ main .WakaTimeEmbedded {
 }
 
 .aboutMe div {
-    flex: 1 0 70%;
+    flex: 1;
 }
 
 .aboutMe figure {
     margin-left: 20px;
-    flex: 1;
 }
 
 .aboutMe div img {
@@ -166,4 +163,32 @@ main .WakaTimeEmbedded {
 
 .aboutMe td {
     padding: 5px;
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    color: #8f8f8f;
+}
+
+@media screen and (max-width: 999px) {
+    section {
+        flex-direction: column-reverse;
+    }
+
+    header p {
+        font-size: 2em;
+        margin-left: 20px;
+    }
+
+    header div {
+        display: none;
+    }
 }
