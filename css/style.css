@@ -24,17 +24,20 @@ header {
     position: sticky;
     top: 0;
     height: 7.5vh;
+    width: 100%;
     background-image: url(../images/matrix.gif);
     background-size: cover;
     background-repeat: no-repeat;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: x-large;
+    /* background-color: aqua; */
+    font-size: 6.5vh;
+    max-height: 100%;
+    height: fit-content;
 }
 
 header img {
@@ -43,10 +46,7 @@ header img {
 }
 
 header nav {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%)
+    height: fit-content;
 }
 
 h1 {
@@ -181,5 +181,14 @@ footer p {
 @media screen and (max-width: 999px) {
     section {
         flex-direction: column-reverse;
+    }
+
+    header p {
+        font-size: 2em;
+        margin-left: 20px;
+    }
+
+    header div {
+        display: none;
     }
 }
