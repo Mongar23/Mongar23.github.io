@@ -12,12 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 999px) {
-    section {
-        flex-direction: column-reverse;
-    }
-}
-
 section {
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +34,7 @@ header p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5vh;
+    font-size: x-large;
 }
 
 header img {
@@ -172,10 +166,20 @@ main .WakaTimeEmbedded {
 }
 
 footer {
-    display: flex;
     background-color: #000000;
     width: 100%;
-    justify-content: center;
     padding: 20px 0;
-    gap: 25%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    color: #8f8f8f;
+}
+
+@media screen and (max-width: 999px) {
+    section {
+        flex-direction: column-reverse;
+    }
 }
