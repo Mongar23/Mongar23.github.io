@@ -28,25 +28,28 @@ header {
     background-image: url(../images/matrix.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 0px;
 }
 
 header p {
-    /* background-color: aqua; */
-    font-size: 6.5vh;
-    max-height: 100%;
+    flex: 1;
+    margin-left: 10px;
+    font-size: 4.5em;
     height: fit-content;
-}
-
-header img {
-    max-height: 5vh;
-    margin: 0 5px;
 }
 
 header nav {
-    height: fit-content;
+    flex: 0 1 1;
+    font-size: 0;
+    height: 100%;
+}
+
+nav img {
+    height: 100%;
+    margin-right: 10px;
 }
 
 h1 {
@@ -135,7 +138,7 @@ main .WakaTimeEmbedded {
 }
 
 .aboutMe {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -184,11 +187,19 @@ footer p {
     }
 
     header p {
-        font-size: 2em;
+        font-size: 4em;
         margin-left: 20px;
     }
 
-    header div {
-        display: none;
+    header nav {
+        height: 50%;
+    }
+
+    aside {
+        margin: 0;
+    }
+
+    main {
+        margin-bottom: 1vh;
     }
 }
