@@ -28,25 +28,27 @@ header {
     background-image: url(../images/matrix.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 0px;
 }
 
 header p {
-    /* background-color: aqua; */
-    font-size: 6.5vh;
-    max-height: 100%;
+    flex: 1;
+    margin-left: 10px;
     height: fit-content;
-}
-
-header img {
-    max-height: 5vh;
-    margin: 0 5px;
 }
 
 header nav {
-    height: fit-content;
+    flex: 0 1 1;
+    font-size: 0;
+    height: 100%;
+}
+
+header img {
+    height: 100%;
+    margin-right: 10px;
 }
 
 h1 {
@@ -54,7 +56,7 @@ h1 {
     color: #00fc3c;
     padding: 5px 5px 5px 10px;
     margin-bottom: 20px;
-    font-size: 3vh;
+    font-size: 2em;
 }
 
 h2 {
@@ -62,7 +64,7 @@ h2 {
     color: #00fc3c;
     padding: 5px 5px 5px 10px;
     margin-bottom: 20px;
-    font-size: 2vh;
+    font-size: 1.25em;
     margin-top: 10px;
 }
 
@@ -135,7 +137,7 @@ main .WakaTimeEmbedded {
 }
 
 .aboutMe {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -148,21 +150,49 @@ main .WakaTimeEmbedded {
     flex: 1;
 }
 
+.aboutMe p {
+    font-size: 1.5em;
+}
+
+.aboutMe div:last-of-type {
+    flex-basis: 100%;
+}
+
+.aboutMe li {
+    font-size: 1.5em;
+}
+
 .aboutMe figure {
     margin-left: 20px;
 }
 
-.aboutMe div img {
-    max-width: 25%;
+.aboutMe table {
+    border: solid 4px black;
+    border-collapse: collapse
 }
 
-.aboutMe table {
-    width: 50%;
-    table-layout: fixed;
+.aboutMe tr {
+    border: solid 2px black;
+}
+
+.aboutMe tr:nth-of-type(even) {
+    background-color: #111111;
+}
+
+.aboutMe th {
+    padding: 5px;
+    font-size: 1.5em;
+    text-decoration: bold;
 }
 
 .aboutMe td {
+    width: 33%;
     padding: 5px;
+    font-size: 1.5em;
+}
+
+.aboutMe td:last-child {
+    text-align: right;
 }
 
 footer {
@@ -184,11 +214,19 @@ footer p {
     }
 
     header p {
-        font-size: 2em;
+        font-size: 4em;
         margin-left: 20px;
     }
 
-    header div {
-        display: none;
+    header nav {
+        height: 50%;
+    }
+
+    aside {
+        margin: 0;
+    }
+
+    main {
+        margin-bottom: 1vh;
     }
 }
