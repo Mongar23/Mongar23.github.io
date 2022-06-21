@@ -46,7 +46,7 @@ header nav {
     height: 100%;
 }
 
-nav img {
+header img {
     height: 100%;
     margin-right: 10px;
 }
@@ -150,8 +150,16 @@ main .WakaTimeEmbedded {
     flex: 1;
 }
 
+.aboutMe p {
+    font-size: 1.5em;
+}
+
 .aboutMe div:last-of-type {
     flex-basis: 100%;
+}
+
+.aboutMe li {
+    font-size: 1.5em;
 }
 
 .aboutMe figure {
@@ -163,8 +171,9 @@ main .WakaTimeEmbedded {
 }
 
 .aboutMe table {
-    width: 50%;
+    width: 100%;
     table-layout: fixed;
+    border: solid 4px black;
 }
 
 .aboutMe td {

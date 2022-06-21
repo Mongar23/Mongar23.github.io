@@ -15,5 +15,4 @@ for (let i = 0; i < toBeScaled.length; i++) {
     const scale = parseFloat(element.id);
 
     fitText(element, scale);
-    console.log("Scaled " + element + " to size " + scale)
 }
