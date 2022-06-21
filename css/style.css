@@ -166,18 +166,33 @@ main .WakaTimeEmbedded {
     margin-left: 20px;
 }
 
-.aboutMe div img {
-    max-width: 25%;
+.aboutMe table {
+    border: solid 4px black;
+    border-collapse: collapse
 }
 
-.aboutMe table {
-    width: 100%;
-    table-layout: fixed;
-    border: solid 4px black;
+.aboutMe tr {
+    border: solid 2px black;
+}
+
+.aboutMe tr:nth-of-type(even) {
+    background-color: #111111;
+}
+
+.aboutMe th {
+    padding: 5px;
+    font-size: 1.5em;
+    text-decoration: bold;
 }
 
 .aboutMe td {
+    width: 33%;
     padding: 5px;
+    font-size: 1.5em;
+}
+
+.aboutMe td:last-child {
+    text-align: right;
 }
 
 footer {
